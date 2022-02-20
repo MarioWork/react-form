@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form > input, textarea {
+    padding: 1em;
+    margin: 1em 0em 0em 1em;
+    border-color: black;
+    border-radius: .5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.checkbox--container{
+    margin: 1em 0em 0em 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+fieldset{
+    margin: 1em 0em 0em 1em;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.select--container{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0em 0em 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select--container > label{
+    margin-bottom: .5em;
 }
+
+button {
+    width: 205px;
+    margin: 1em 0em 0em 1em;
+    padding: 1em;
+    font-size: 1em;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+
